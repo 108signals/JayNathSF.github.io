@@ -41,11 +41,12 @@ jay AT jaynath.com (non-work related) </p>
 
 <!-- Begin SimplerSES Signup Form -->
 <form action="https://api.simplerses.com/v1/subscriber_lists/Test/subscribers?auth_token=CZyU_9ES-6fvPx_iCaeh&email=email“ method="post">
-  <input type="hidden" name="data" value="1" />
-  <input type="submit" value=“Subscribe to list”>
-  <input type=“email” value=“Subscribe to list”>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id=“email" name=“email” value=“email” />
+	  <input type="submit" value=“Subscribe to list”>
+    </div>
 </form>
-
 
 <!--End mc_embed_signup-->
 
