@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   </head>
   <body>
     <section class="page-header">
@@ -35,11 +35,36 @@
 
 <h3>
 <a id="contact-me" class="anchor" href="#contact-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact me</h3>
-<form class="pure-form pure-form-aligned" method="POST" action="http://formspree.io/jay@jaynath.com">
-  <input type="text" name="name" placeholder="Your name"><br>
-  <input type="email" name="email" placeholder="Your email"><br>
-  <textarea name="message" placeholder="Your message"></textarea><br>
-  <button type="submit">Send</button>
+<form class="col s12" method="POST" action="http://formspree.io/jay@jaynath.com">
+<div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Name" type="text" class="validate">
+          <label for="Name">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          This is an inline input field:
+          <div class="input-field inline">
+            <input id="email" type="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+    	  <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <button class="waves-effect waves-light btn" type="submit">Send</button>
 </form>
 
 
